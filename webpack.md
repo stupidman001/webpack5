@@ -36,14 +36,24 @@
 
 ## 3. webpack 初始化
 
+​	**webpack 默认可以打包 JS 文件和 JSON 文件**，**不能直接打包 css 和 img 资源**
+
+- 打包 JS 文件
+
 1. npm init 初始化一个包
 2. npm i webpack **webpack-cli** -g （ 通过指令使用webpack内部的功能 ) 全局下载
 3. npm i webpack webpack-cli -D 添加到开发依赖
-4. 
+4. 创建 src 文件夹，src 文件夹中创建 index.js 文件。
+5. 控制台执行：webpack ./src/index.js -o ./build --mode=development
+
+- 打包 JSON 文件
+
+1. src 目录中创建 data.json 文件
+2. 在 index.js 文件中引入 data.json 文件
 
 
 
-
+## 4.打包样式资源
 
 
 
